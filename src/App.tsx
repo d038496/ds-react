@@ -22,7 +22,8 @@ import EventComponent from "./components/EventComponent";
 import MethodComponent from "./components/MethodComponent";
 
 function App() {
-  const [title, setTitle] = useState("Welcome");
+  const [title, setTitle] = useState("Pagespeed Playground react");
+  const [subtitle, setSubtitle] = useState("the playground where you see the speed");
 
   useEffect(() => {
     onBalConfigChange((config: BalConfigState) => {
@@ -50,13 +51,13 @@ function App() {
         <BalNavbar>
           <BalNavbarBrand>React Example</BalNavbarBrand>
         </BalNavbar>
-        <BalStage color="purple" size="small">
+        <BalStage color="red" size="small">
           <BalStageBody>
             <BalHeading space="none" data-testid="welcome-title">
               {title}
             </BalHeading>
             <BalHeading space="none" subtitle level="h2">
-              To the Baloise Design System
+              {subtitle}
             </BalHeading>
           </BalStageBody>
         </BalStage>
