@@ -30,16 +30,20 @@ function App() {
       const language = config.language as BalSwissLanguage;
       switch (language) {
         case "de":
-          setTitle("Willkommen");
+          setTitle("Pagespeed Playground react");
+          setSubtitle("der Spielplatz wo du die Geschwindigkeit siehst");
           break;
         case "it":
-          setTitle("Benvenuta");
+          setTitle("Pagespeed Playground react");
+          setSubtitle("il parco giochi dove vedi la velocità");
           break;
         case "fr":
-          setTitle("Bienvenue");
+          setTitle("Pagespeed Playground react");
+          setSubtitle("le terrain de jeu où vous voyez la vitesse");
           break;
         default:
-          setTitle("Welcome");
+          setTitle("Pagespeed Playground react");
+          setSubtitle("the playground where you see the speed");
           break;
       }
     });
